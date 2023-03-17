@@ -16,10 +16,10 @@ int main(void)
 			{
 				if (l > m && m > n)
 				{
-					putchar(m);
 					putchar(n);
+					putchar(m);
 					putchar(l);
-					if (n != 56 || m != 57)
+					if (n != 55 || m != 56)
 					{
 						putchar(',');
 						putchar(' ');
