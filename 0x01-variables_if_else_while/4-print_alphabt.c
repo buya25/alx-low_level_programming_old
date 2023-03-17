@@ -5,18 +5,19 @@
 /**
  * main - prints the alphabet without q and e.
  *
- * ReturnL: 0 Success
+ * Return: 0 Success
  */
 int main(void)
 {
-	int i;
+	char ch = 'a';
 
-	for (i = 97; i < 123; i++)
+	while (ch <= 'z')
 	{
-		if(i != 101 && i != 113)
+		if (ch != 'e' && ch != 'q')
 		{
-			putchar(i);
+			putchar(ch);
 		}
+		ch++;
 	}
 	putchar('\n');
 	return (0);
