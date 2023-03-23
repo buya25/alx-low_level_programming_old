@@ -1,11 +1,9 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
- * pirnt_times_table - prints the n times table, starting with
+ * print_times_table - prints the n times table, starting with
  * @n: number of times table
  */
-
 void print_times_table(int n)
 {
 	int j, k, i;
