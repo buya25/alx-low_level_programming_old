@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 
 /**
  * pirnt_times_table - prints the n times table, starting with
@@ -26,7 +27,7 @@ void print_times_table(int n)
 					_putchar(' ');
 					_putchar(' ');
 					_putchar(' ');
-					_putchar(k + '0')
+					_putchar(k + '0');
 				}
 				else if (k >= 10 && k < 100)
 				{
@@ -40,7 +41,7 @@ void print_times_table(int n)
 				{
 					_putchar(',');
 					_putchar(' ');
-					_putchar((K / 100) + '0');
+					_putchar((k / 100) + '0');
 					_putchar(((k / 10) % 10) + 10);
 					_putchar((k % 10) + '0');
 				}
