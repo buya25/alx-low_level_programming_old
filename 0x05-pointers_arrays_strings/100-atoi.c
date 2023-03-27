@@ -1,4 +1,6 @@
-#include "main.h"
+#include <stdio.h>
+#include <time.h>
+#include <stdlib.h>
 
 /**
  * _atoi - converts a string to an integer
@@ -41,6 +43,7 @@ int _atoi(char *s)
 		}
 		if (f == 0)
 			return (0);
+
 	}
 	return (n);
 }
