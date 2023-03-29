@@ -19,7 +19,9 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 		;
 	/* add digits starting from the least significant position */
 	carry = 0;
-	for (i = l1 - 1, j = l2 - 1, k = 0; i >= 0 || j >= 0 || carry > 0; i--, j--, k++)
+	for (i = l1 - 1, j = l2 - 1, k = 0;
+			i >= 0 || j >= 0 || carry > 0;
+			i--, j--, k++)
 	{
 		sum = carry;
 		if (i >= 0)
