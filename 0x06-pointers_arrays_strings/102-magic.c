@@ -1,5 +1,8 @@
 #include <stdio.h>
 
+/**
+ * main: returns the value
+ */
 int main(void)
 {
 	int n;
