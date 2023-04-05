@@ -46,7 +46,7 @@ int wildcmp(char *s1, char *s2)
 		return (0);
 
 	/**
-	 * if the char in s2 is a*
+	 * if the char in s2 is a *
 	 * finds the address of the first char after the *
 	 * if we reached the end of s2, return 1
 	 * if the chars are equal, and the return values
