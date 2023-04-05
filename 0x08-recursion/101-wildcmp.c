@@ -19,13 +19,13 @@ int wildcmp(char *s1, char *s2)
 	 */
 	int sum = 0;
 
-		/**
-		 * if we reach the end of s1 and the char in s2 is a*
-		 * and if the next chars of s2 are *, return 1
-		 */
-		if (*s1 == '\0' && *s2 == '*' && !*move(s2))
-			return (1);
-
+	/**
+	 * if we reach the end of s1 and the char in s2 is a*
+	 * and if the next chars of s2 are *, return 1
+	 */
+	if (*s1 == '\0' && *s2 == '*' && !*move(s2))
+		return (1);
+	
 	/**
 	 * if the chars are equal in both strings,
 	 * if we reached the end of s1, return 1
