@@ -6,7 +6,7 @@
  * @accept: input
  * Return: Always 0 (Success)
  */
-unsinged int _strpn(char *s, char *accept)
+unsigned int _strpn(char *s, char *accept)
 {
 	unsigned int n = 0;
 	int r;
