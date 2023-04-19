@@ -1,4 +1,4 @@
-#inlcude "3-calc.h"
+#include "3-calc.h"
 
 /**
  * get_op_func - function pointer that selects the correct function to perfom
@@ -22,9 +22,9 @@ int (*get_op_func(char *s))(int, int)
 
 	i = 0;
 
-	while (ops[i].op)
+	while (ops[i].op != NULL)
 	{
-		if (strcmp(ops[i].op, s) == 0)
+		if (*(ops[i].op) == *s)
 			return (ops[i].f);
 		i++;
 	}

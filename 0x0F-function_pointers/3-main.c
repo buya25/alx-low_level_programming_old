@@ -26,13 +26,13 @@ int main(int argc, char *argv[])
 
 	if (!func)
 	{
-		printf("Error\m");
+		printf("Error\n");
 		exit(99);
 	}
 
-	0 = *argv[2];
+	o = *argv[2];
 
-	if ((0 == '/' || 0 == '%') && arg2 == 0)
+	if ((o == '/' || o == '%') && arg2 == 0)
 	{
 		printf("Error\n");
 		exit(100);
