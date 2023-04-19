@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
 
 	func = get_op_func(argv[2]);
 
-	if(!func)
+	if (!func)
 	{
 		printf("Error\m");
 		exit(99);
@@ -32,7 +32,7 @@ int main(int argc, char *argv[])
 
 	0 = *argv[2];
 
-	if ((0 == '/' || 0== '%') && arg2 == 0)
+	if ((0 == '/' || 0 == '%') && arg2 == 0)
 	{
 		printf("Error\n");
 		exit(100);
