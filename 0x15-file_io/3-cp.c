@@ -1,4 +1,7 @@
 #include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
+
 
 /**
  * main - copies the content of a file to another file
@@ -50,4 +53,46 @@ int main(int argc, char *argv[])
 	}
 
 	return (0);
+}
+
+char *create_buffer(char *file);
+void close_file(int fd);
+
+/**
+ * create_buffer - Allocates 1024 bytes-  buffer.
+ * @file: The name of the file buffer is storing chars for.
+ *
+ * Return: A pointer to the newly-allocated buffer.
+ */
+char *create_buffer(char *file)
+{
+	char *bf;
+
+	bf = malloc(sizeof(char) * 1024);
+
+	if (bf == NULL)
+	{
+		dprintf(STDERR_FILENO,
+			"Error: Can't write to %s\n", file);
+		exit(99);
+	}
+
+	return (bf);
+}
+
+/**
+ * close_file - descriptors files are closed
+ * @fd: descriptore files to be closed
+ */
+void close_file(int fd)
+{
+	int dc;
+
+	dc = close(fd);
+
+	if (dc == -1)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
+		exit(100);
+	}
 }
